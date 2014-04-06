@@ -1,0 +1,11 @@
+{
+  "packages": 
+    {
+      "scaffdense": {
+        "source": "https://github.com/mtomcal/scaffdense"
+      },
+      "bidensity": {
+        "source": "file:///home4/mtomcal/bidensity/.git"
+      }
+    }
+}
