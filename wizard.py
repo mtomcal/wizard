@@ -90,7 +90,7 @@ def update(name, config, tmp):
         print "Could not find the package %s, sorry." % (name)
         sys.exit(1)
 
-    if not os.path.isdir(tmp.tmp_path(name)):
+    if not os.path.isdir(name):
         print """****
 The %s/ folder doesn't exist in %s so I can't update it.
 Switch to the folder where %s/ is located and run update again.
@@ -105,9 +105,9 @@ Switch to the folder where %s/ is located and run update again.
     print "**** %s/%s updated ****" % (os.getcwd(), name)
 
 def upgrade(config, tmp):
-      urllib.urlretrieve("", filename="wizard.py")
-      urllib.urlretrieve("", filename="config.json")
-      print "**** Wizard upgraded ****"
+    urllib.urlretrieve("https://raw.githubusercontent.com/mtomcal/wizard/master/wizard.py", filename="wizard.py")
+    urllib.urlretrieve("https://raw.githubusercontent.com/mtomcal/wizard/master/config.json", filename="config.json")
+    print "**** Wizard upgraded ****"
 
 def main():
     tmp = Tmp()
