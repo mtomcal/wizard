@@ -6,6 +6,9 @@
       },
       "bidensity": {
         "source": "file:///home4/mtomcal/bidensity/.git"
+      },
+      "wigdiff": {
+        "source": "https://github.com/mtomcal/wigdiff"
       }
     }
 }

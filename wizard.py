@@ -105,8 +105,8 @@ Switch to the folder where %s/ is located and run update again.
     print "**** %s/%s updated ****" % (os.getcwd(), name)
 
 def upgrade(config, tmp):
-      urllib.urlretrieve("https://raw.githubusercontent.com/mtomcal/wizard/master/wizard.py", filename="wizard.py")
-      urllib.urlretrieve("https://raw.githubusercontent.com/mtomcal/wizard/master/config.json", filename="config.json")
+      urllib.urlretrieve("", filename="wizard.py")
+      urllib.urlretrieve("", filename="config.json")
       print "**** Wizard upgraded ****"
 
 def main():
